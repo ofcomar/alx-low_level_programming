@@ -1,7 +1,3 @@
-/*
- * 6-size.c
- */
-
 #include <stdio.h>
 
 /**
