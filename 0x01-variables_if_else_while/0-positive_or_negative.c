@@ -1,6 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+/* more header goes here. */
+
+
 /**
  * main - Entry point
  * Description: if-else program.
@@ -9,10 +12,11 @@
 int main(void)
 {
 	int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* the code start here */
-	if (n > 0)
+/* the code start here */
+        if (n > 0)
 	{
 		printf("%d is positive\n", n);
 	}
