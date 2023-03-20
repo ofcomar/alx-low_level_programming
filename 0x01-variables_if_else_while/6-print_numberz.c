@@ -1,16 +1,17 @@
 #include <stdio.h>
 /**
-*main -
-*
-* print numbe
-*/
-int main (void)
+ * main - prints all single digit numbers of base 10 starting from 0,
+ * followed by a new line, using putchar
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
-int n;
-for (n = 0; n <= 9; n++)
-{
-putchar(n + 48);
-}
-putchar('\n');
-return (0);
+	int n;
+
+	for (n = 0; n <= 9; n++)
+	{
+		putchar(n + 48);
+	}
+	putchar('\n');
+	return (0);
 }
