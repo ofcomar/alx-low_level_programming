@@ -2,13 +2,17 @@
 
 int main(void)
 {
-	int a;
+	int a = 0;
 
-	for (a = 48; a <= 57; a++)
+	while (a <= 9)
 	{
-		putchar(a);
+		putchar(a + 48);
+		if (a != 9)
+		{
 		putchar(',');
 		putchar(' ');
+		}
+		++a;
 	}
 	putchar ('\n');
 	return (0);
