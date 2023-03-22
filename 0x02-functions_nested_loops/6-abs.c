@@ -7,9 +7,9 @@
  */
 int _abs(int)
 {
-	int = x;
-	abs = x;
-	putchar(x);
-	return (0);
-		
+	if(n<0)
+	{
+		n = -n;
+		return (n);
+	}
 }
