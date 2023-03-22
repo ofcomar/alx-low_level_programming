@@ -7,16 +7,12 @@
  */
 int _abs(int)
 {
-		if (n > 0)
+	if (d < 0)
 	{
-		return (n);
+		int abs_v;
+
+		abs_v = d * -1;
+		return (abs_v);
 	}
-	else if (n < 0)
-	{
-		return (-n);
-	}
-	else
-	{
-		return (n);
-	}
+	return (d);
 }
