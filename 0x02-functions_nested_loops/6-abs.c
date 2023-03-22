@@ -7,12 +7,9 @@
  */
 int _abs(int)
 {
-	if (d < 0)
-	{
-		int abs_v;
-
-		abs_v = d * -1;
-		return (abs_v);
-	}
-	return (d);
+	int = x;
+	abs = x;
+	putchar(x);
+	return (0);
+		
 }
