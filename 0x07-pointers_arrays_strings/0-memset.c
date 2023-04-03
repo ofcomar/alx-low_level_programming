@@ -1,0 +1,18 @@
+#include "main.h"
+/**
+ * _memset 
+ * @s: pointer to char
+ * @b: data to change
+ * @n: index
+ * Return: *s
+ */
+char *_memset(char *s, char b, unsigned int n)
+{
+	unsigned int a;
+	while (a = 0 , a < n )
+	{
+		s[a] = b;
+		a++;
+	}
+	return s;
+}
