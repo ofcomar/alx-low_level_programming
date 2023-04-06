@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * sqrt_check - checks for the square root of c
- * @g:guess at sqrt
- * @c: number to find sqrt of
+ * sqt_cck - checks for the square root of b
+ * @a:guess at sqrt
+ * @b: number to find sqrt of
  *
- * Return: -1 or sqrt of c
+ * Return: -1 or sqrt of b
  */
 int sqt_cck(int a, int b)
 {
