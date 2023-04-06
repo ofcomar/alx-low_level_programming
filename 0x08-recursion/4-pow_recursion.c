@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _pow_recursion 
- * x: integer prtrm
- * y: integer prtrm
+ *_pow_recursion - pow recursion
+ * @x: integer parameter
+ * @y: integer parameter
  * Return: recursion
  */
 
