@@ -1,43 +1,39 @@
 #include "main.h"
 #include <stdlib.h>
-
 /**
- * str_concat - concatenates two strings.
- * @s1: first string.
- * @s2: second string.
- *
- * Return: pointer of an array of chars
+ * str_concat - concat 2 string
+ * @s1:string1
+ * @s2:string2
+ * Return:char
  */
+
 char *str_concat(char *s1, char *s2)
 {
-	char *strut;
-	unsigned int a, b, c, limit;
+	unsigned int i, j, k, l;
+	char *s;
 
 	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
-
-	for (a = 0; s1[a] != '\0'; a++)
-		;
-
-	for (b = 0; s2[b] != '\0'; b++)
-		;
-
-	strut = malloc(sizeof(char) * (a + b + 1));
-
-	if (strut == NULL)
+		i = 0;
+	else
 	{
-		free(strut);
-		return (NULL);
+		for (i = 0; s1[i]; i++)
+			;
 	}
-
-	for (c = 0; c < a; c++)
-		strut[c] = s1[c];
-
-	limit = b;
-	for (b = 0; b <= limit; c++, b++)
-		strut[k] = s2[b];
-
-	return (strut);
+	if (s2 == NULL)
+		j = 0;
+	else
+	{
+		for (j = 0; s2[j]; j++)
+			;
+	}
+	k = i + j + 1;
+	s = malloc(k * sizeof(char));
+	if (s == NULL)
+		return (NULL);
+	for (l = 0; l < i; l++)
+		s[l] = s1[l];
+	for (l = 0; l < j; l++)
+		s[l + i] = s2[l];
+	s[i + j] = '\0';
+	return (s);
 }
